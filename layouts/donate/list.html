@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="site-donate">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h1 class="site-donate-title">
+          {{ .Params.heading | safeHTML }}
+        </h1>
+      </div>
+      <div class="col-lg-6 ml-auto">
+        <div class="site-donate-form">
+          <h4>{{ .Params.form_heading }}</h4>
+          <button class="btn btn-primary" id="donate-form-button">
+            <span class="btn-area">
+              <span data-text="{{ .Site.Params.donateForm.send_message }}">
+                {{ .Site.Params.donateForm.send_message }}
+              </span>
+            </span>
+          </button>
+          <p class="donate-form-generator">
+          <a href="https://fabform.io/" target="_blank">form backend service</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

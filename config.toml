@@ -16,17 +16,21 @@ summarylength = 25
     url     = "about"
     weight  = 2
   [[menu.nav]]
-    name    = "Portfolio"
-    url     = "portfolio"
+    name    = "Testimonials"
+    url     = "testimonials"
     weight  = 3
   [[menu.nav]]
-    name    = "Blog"
-    url     = "blog"
+    name    = "Posts"
+    url     = "posts"
     weight  = 4
   [[menu.nav]]
-    name    = "Get in touch"
+    name    = "Contact"
     url     = "contact"
     weight  = 5
+  [[menu.nav]]
+    name    = "Donate"
+    url     = "donate"
+    weight  = 6
 
 # Site Params
 [params]
@@ -60,11 +64,27 @@ summarylength = 25
       value = "wd"
       title  = "Web Design"
   
+  # Donate Form
+  [params.donateForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Project Type"
+    placeholder_about_the_project = "About the Project"
+    send_message                  = "Donate"
+
+    [[params.donateForm.projectType]]
+      value = "gd"
+      title  = "Graphics Design"
+    [[params.donateForm.projectType]]
+      value = "wd"
+      title  = "Web Design"
+  
   # Navbar Action Button
   [params.navAction]
     status  = true
-    name    = "Get in touch"
-    url     = "contact"
+    name    = "Donate"
+    url     = "donate"
   
 
   # Banner Section
@@ -74,14 +94,14 @@ summarylength = 25
     heading               = "We’re a Design Studio That Belies In the Great Ideas"
     tagline               = "WE WORK HARD, WE PLAY HARD"
     primary_button        = "See Our Works"
-    primary_button_url    = "portfolio"
+    primary_button_url    = "testimonials"
     secondary_button      = "Connect with Us"
     secondary_button_url  = "contact"
 
-  [params.blog]
+  [params.posts]
     read_more             = "read more"
 
-  [params.portfolio]
+  [params.testimonial]
     enable    = true
     title     = "OUR RECENT WORKS"
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
@@ -96,7 +116,7 @@ summarylength = 25
     primary_button      = "Submit Query"
     primary_button_url  = "contact"
     secondary_button    = "Not Convinced"
-    secondary_button_url = "portfolio"
+    secondary_button_url = "testimonials"
 
   [params.footer]
     params.footer.qr_print = false
@@ -114,10 +134,10 @@ summarylength = 25
           url  = "about"
         [[params.footer.sitemap.link]]
           name = "Projects"
-          url  = "portfolio"
+          url  = "testimonials"
         [[params.footer.sitemap.link]]
-          name = "Blog"
-          url  = "blog"
+          name = "Posts"
+          url  = "posts"
         [[params.footer.sitemap.link]]
           name = "Contact"
           url  = "contact"
