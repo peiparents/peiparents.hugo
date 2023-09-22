@@ -1,4 +1,4 @@
-baseURL       = "http://example.org/"
+baseURL       = "https://peiparents.com/"
 languageCode  = "en-us"
 title         = "PEI Parents"
 summarylength = 25
@@ -40,8 +40,8 @@ summarylength = 25
   custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
   dateFormat = "26 FEB 1994"
   # Meta data
-  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
-  author = "StaticMania"
+  description = "PEI Parents Description..."
+  author = "PEIParents"
   # Google Analitycs
   googleAnalitycsID = "Your ID"
   # We're using formspree.io for form handling, paste your formspree url below
@@ -90,18 +90,18 @@ summarylength = 25
   [params.banner]
     enable                = true
     background_image      = "images/backgrounds/hero-background.jpg"
-    heading               = "We’re a Design Studio That Belies In the Great Ideas"
-    tagline               = "WE WORK HARD, WE PLAY HARD"
-    primary_button        = "See Our Works"
+    heading               = "We're a group of parents trying to protect our kids ......."
+    tagline               = "TAGLINE GOES HERE"
+    primary_button        = "Testimonials"
     primary_button_url    = "testimonials"
-    secondary_button      = "Connect with Us"
-    secondary_button_url  = "contact"
+    secondary_button      = "Donate"
+    secondary_button_url  = "donate"
 
   [params.posts]
     read_more             = "read more"
 
   [params.testimonial]
-    enable    = true
+    enable    = false
     title     = "OUR RECENT WORKS"
     subtitle  = "Crafting experiences and seeking to make the complex clear & beautiful."
     view_project = "view project"
@@ -120,19 +120,19 @@ summarylength = 25
   [params.footer]
     params.footer.qr_print = false
     # Footer Contact Info
-    [params.footer.contactInfo]
-      title   = "Contact Info"
-      address = "713 Elmwood St.<br>Prior Lake, MN 55372"
-      phone   = "409-896-1444"
-      email   = "info@roxo.co"
+    # [params.footer.contactInfo]
+    #   title   = ""
+    #   address = ""
+    #   phone   = ""
+    #   email   = ""
       # Footer Sitemap
       [params.footer.sitemap]
         title   = "Sitemap"
         [[params.footer.sitemap.link]]
-          name = "About Company"
+          name = "About"
           url  = "about"
         [[params.footer.sitemap.link]]
-          name = "Projects"
+          name = "Testimonials"
           url  = "testimonials"
         [[params.footer.sitemap.link]]
           name = "Posts"
@@ -140,17 +140,14 @@ summarylength = 25
         [[params.footer.sitemap.link]]
           name = "Contact"
           url  = "contact"
+        [[params.footer.sitemap.link]]
+          name = "Donate"
+          url  = "donate"
       # Footer Social Media
       [params.footer.social]
         title   = "Social Media"
         [[params.footer.social.link]]
-          name = "Medium"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Behance"
-          url  = "#"
-        [[params.footer.social.link]]
-          name = "Dribbble"
+          name = "X (Twitter)"
           url  = "#"
         [[params.footer.social.link]]
           name = "Instagram"
@@ -160,4 +157,4 @@ summarylength = 25
         title       = "We help brands:"
         description = "develop design solutions<br>produce valuable cultural content<br>create fresh brand experience"
       [params.footer.back_to_top]
-        description = "I want to <br> visit again"
+        description = "To Top"
